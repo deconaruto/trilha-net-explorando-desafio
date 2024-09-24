@@ -10,19 +10,19 @@ namespace DesafioProjetoHospedagem.Models
 
         public Reserva(int diasReservados)
         {
-            DiasReservados = diasReservados;
+            DiasReservados = DiasReservados;
         }
 
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
             
-            if (Suite,Capcidade >= hospedes.Count) 
+            if (Suite,Capacidade >= hospedes.Count) 
             {
                 Hospedes = hospedes;
             }
             else
             {
-                throw new Exception ("Capcidade menor do que o número de hóspedes");
+                throw new Exception ("Capacidade menor do que o número de hóspedes");
             }
         }
 
